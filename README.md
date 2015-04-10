@@ -46,7 +46,7 @@ Many options can be seen in the [Slack API docs](https://api.slack.com/methods/c
 * __level:__ Level of messages that this transport should log
 * __silent:__ If true, will not log messages
 * __token:__ Required. Slack incoming webhook token
-* __channel:__ Required. Channel of chat (e.g. "#foo" or "foo")
+* __channel:__ Required. Channel of chat (e.g. "#foo" or "@foo")
 * __domain:__ Required. Domain of Slack (e.g. "foo" if "foo.slack.com")
 * __username:__ Username of the incoming webhook Slack bot (defaults to "Winston")
 * __icon_emoji:__ Icon of bot (defaults to :tophat: `:tophat:`)
