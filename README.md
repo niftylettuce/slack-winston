@@ -1,4 +1,6 @@
 # slack-winston
+Forked from https://github.com/niftylettuce/slack-winston
+
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][npm-downloads]][npm-url]

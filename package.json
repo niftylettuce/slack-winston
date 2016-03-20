@@ -1,11 +1,11 @@
 {
-  "name": "slack-winston",
-  "version": "0.0.4",
+  "name": "slack-winston-1",
+  "version": "0.0.6",
   "description": "A Slack transport for winston",
-  "author": "Nick Baugh <niftylettuce@gmail.com>",
+  "author": "Keenahn Jung <keenahn@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/niftylettuce/slack-winston.git"
+    "url": "https://github.com/keenahn/slack-winston.git"
   },
   "keywords": [
     "logging",
@@ -16,18 +16,15 @@
     "slack",
     "flatiron"
   ],
+  "main": "./lib/slack-winston",
   "dependencies": {
-    "request": "~2.27.0",
-    "lodash": "~2.2.1"
+    "lodash": "^4.6.1",
+    "request": "^2.69.0"
   },
   "devDependencies": {
-    "winston": "~0.7"
+    "winston": "^2.2.0"
   },
   "peerDependencies": {
-    "winston": "<=0.8 || >=0.7"
-  },
-  "main": "./lib/slack-winston",
-  "engines": {
-    "node": ">= 0.10.x"
+    "winston": "^2.2.0"
   }
 }
