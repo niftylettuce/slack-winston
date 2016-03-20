@@ -1,6 +1,6 @@
 {
   "name": "slack-winston-1",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A Slack transport for winston",
   "author": "Keenahn Jung <keenahn@gmail.com>",
   "repository": {
