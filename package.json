@@ -1,11 +1,11 @@
 {
-  "name": "slack-winston",
+  "name": "slack-winston-1",
   "version": "0.0.5",
   "description": "A Slack transport for winston",
-  "author": "Nick Baugh <niftylettuce@gmail.com>",
+  "author": "Keenahn Jung <keenahn@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/niftylettuce/slack-winston.git"
+    "url": "https://github.com/keenahn/slack-winston.git"
   },
   "keywords": [
     "logging",
