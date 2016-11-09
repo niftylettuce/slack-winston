@@ -17,17 +17,18 @@
     "flatiron"
   ],
   "dependencies": {
-    "request": "~2.27.0",
-    "lodash": "~2.2.1"
+    "request": "^2.69.0",
+    "lodash": "^4.3.0"
   },
   "devDependencies": {
-    "winston": "~0.7"
+    "winston": "^2.1.1"
   },
   "peerDependencies": {
-    "winston": "<=0.8 || >=0.7"
+    "winston": ">=0.7"
   },
   "main": "./lib/slack-winston",
   "engines": {
     "node": ">= 0.10.x"
-  }
+  },
+  "license": "MIT"
 }
