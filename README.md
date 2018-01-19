@@ -9,6 +9,7 @@
 > **NOTE**: This package was created because `winston-slack` did not have similar code
 structure to `winston-hipchat` (switched from using HipChat &rarr; Slack and wanted consistency).
 
+**API change notice:** 1.x has made potentially breaking changes to the modules options. The `token` field is no longer required as the slack API no longer uses it. The username and emoji field now function differently. See the [usage](#usage) section for more details.
 
 ## Index
 
@@ -46,12 +47,12 @@ Many options can be seen in the [Slack API docs](https://api.slack.com/methods/c
 
 * __level:__ Level of messages that this transport should log
 * __silent:__ If true, will not log messages
-* __token:__ Required. Slack incoming webhook token
-* __webhook_url:__ Required. Slack incoming webhook url.
+* __webhook_url:__ Required. Slack incoming webhook url, _if your webhook integration is old for some reason then you may prefer to use the domain and token approach instead_.
+* __domain:__ Required if webhook_url is not provided. Domain of Slack (e.g. "foo" if "foo.slack.com")
+* __token:__ Required if webhook_url is not provided. The token provided by slack
 * __channel:__ Required. Channel of chat (e.g. "#foo" or "@foo")
-* __domain:__ Required. Domain of Slack (e.g. "foo" if "foo.slack.com")
-* __username:__ Username of the incoming webhook Slack bot (defaults to "Winston")
-* __icon_emoji:__ Icon of bot (defaults to :tophat: `:tophat:`)
+* __username:__ Username of the incoming webhook Slack bot, if this is not set then slack will use the integration (webhook) configuration settings.
+* __icon_emoji:__ Icon of bot, if this is not set then slack will use the integration (webhook) configuration settings.
 * __message:__ [lodash templates](http://lodash.com/docs#template). Gets passed the `{{message}}`, `{{level}}`, and `{{meta}}` as a JSON string. If not specified, it will print a default of `{{message}}\n\n{{meta}}`.  **Note that this gets sent as the `text` field in the payload per Slack requirements.**
 * __queueDelay:__ Delay time (ms) between messages in queue (defaults to 500)
 
